@@ -1,4 +1,4 @@
-package campusstore
+package com.aun.campusstore
 
 class OrderLine {
     static belongsTo = [order:Orders]

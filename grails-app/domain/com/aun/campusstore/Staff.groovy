@@ -1,27 +1,23 @@
-package campusstore
+package com.aun.campusstore
 
-class Buyer {
+class Staff {
 	String firstName
 	String middleName
 	String lastName
+	String position
 	String phoneNumber
-	String dorm
-	String roomNumber
-	String accountBalance
 
 	//static hasMany = {order:Order}
 
     static constraints = {
     	firstName(blank:false)
     	middleName()
-    	lastName(blank: false)
+    	lastName(blank:false)
+    	position(blank:false)
     	phoneNumber(blank:false)
-    	dorm(blank:false)
-    	roomNumber(blank:false)
-    	accountBalance()
     }
 
     String toString(){
-    	return "${firstName} ${lastName}, ${phoneNumber}"
+    	return "${firstName} ${lastName}, ${position}"
     }
 }
